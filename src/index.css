@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Crimson+Pro:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --coral: #DA7D5F;
+  --sand: #F5E6D9;
+  --ink: #1A1A1A;
+  --cream: #FAF7F2;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--cream);
+  color: var(--ink);
+}
+
+.dark body {
+  background-color: var(--ink);
+  color: var(--cream);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.dark .glass-input {
+  background: rgba(26, 26, 26, 0.8);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.glass-input:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.dark .glass-input:hover {
+  background: rgba(26, 26, 26, 0.9);
+}
+
+.poem-text {
+  font-family: 'Crimson Pro', serif;
+}
+
+.dark {
+  color-scheme: dark;
+}
